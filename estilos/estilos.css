@@ -49,7 +49,7 @@ header {
    grid-area: header;
    background-color: black; 
    color: whitesmoke;
-}
+} 
 
 footer {
    grid-area: footer;
