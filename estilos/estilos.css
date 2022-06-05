@@ -47,7 +47,7 @@ align-self: center;
 /* ----DECLARO AREAS ---- */
 header {
    grid-area: header;
-   background-color: black; 
+   background-image: linear-gradient(to bottom,black,grey);
    color: whitesmoke;
 } 
 
