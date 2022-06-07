@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/estilos.css">
     <script src="https://kit.fontawesome.com/87035ea680.js" crossorigin="anonymous"></script>
-    
+
     <title>Servicio Veterinario S.A.</title>
 </head>
 
@@ -16,75 +18,87 @@
 
     <div id="grilla">
         <header class="border">
-            <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Servicio Veterinario</h1>
+            <a href="index.html">
+                <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">Servicio Veterinario
+                </h1>
+            </a>
         </header>
 
-        <nav class="border ">
-            <ul class="menuFlex">
-                <li>
-                <li><a href=index.html>Home</a> </li>
-                <li> <a href="./secciones/actividades.html">Actividades</a> </li>
-                <li> <a href="./secciones/contactenos.html">Contactenos</a></li>
-                <li> <a href="./secciones/multimedia.html">Multimedia</a></li>
-                <li> <a href="./secciones/nosotros.html">Nosotros</a></li>
-                <li> <a href="./secciones/tramites.html">Tramites</a> </li>
-
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./secciones/actividades.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./secciones/contactenos.html">Contactenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./secciones/multimedia.html">Multimedia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./secciones/tramites.html">Secciones</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-                     
 
         <section id="productos" class="border productosFlex">
-            <article >
+            <article>
                 <img src="./img/horse1.jpg" alt="" width="201" height="201">
                 <p>Medicina deportiva del Equino</p>
             </article>
-            <article >
+            <article>
                 <img src="https://placekitten.com/201" alt="">
                 <p>Medicina General en Perros y Gatos</p>
             </article>
-            <article >
+            <article>
                 <img src="./img/vetdogs.jpg" alt="" width="201" height="201">
                 <p>Cuidamos tu mascota !</p>
             </article>
         </section>
 
-        <section id="servicios" class="border">
-                <p class="parrafoindex">
-                    En el Servicio Veterinario de XXX S.A. trabajamos para:
-                </p>
-                <p class="parrafoindex">
-                    Asesorar a la Comisión Hípica y a la Gerencia del Hipódromo en la organización, control y desarrollo
-                    de
-                    las carreras hípicas, garantizando la transparencia, asegurando la credibilidad del espectáculo
-                    hípico y
-                    promoviendo el desarrollo del Sangre Pura de Carrera.
-                </p>
-                <p class="parrafoindex">
-                    Promover un buen espectáculo, en base a un control clínico previo a las carreras, brindando la
-                    atención
-                    necesaria en accidentes, de manera de asegurar el bienestar y la seguridad tanto de jinetes como de
-                    equinos.
-                </p>
-                <p class="parrafoindex">
-                    Prevenir eventos sanitarios individuales o poblacionales que conspiren contra el correcto desarrollo
-                    de
-                    sus actividades, mediante el control de la condición física y del esquema sanitario del total de los
-                    equinos que participan de las carreras hípicas.
-                </p>
-                <p class="parrafoindex">
-                    Contribuir a una competencia objetiva, previniendo fraudes mediante un sistema eficaz de
-                    identificación
-                    y control de identidad de los equinos que compiten, y un sistema de control y detección de
-                    sustancias
-                    prohibidas.
-                </p>
-
-
-
+        <section id="servicios" class="border serviciosFlex">
+            <p class="parrafoindex">
+                En el Servicio Veterinario de XXX S.A. trabajamos para:
+            </p>
+            <p class="parrafoindex">
+                Asesorar a la Comisión Hípica y a la Gerencia del Hipódromo en la organización, control y desarrollo
+                de
+                las carreras hípicas, garantizando la transparencia, asegurando la credibilidad del espectáculo
+                hípico y
+                promoviendo el desarrollo del Sangre Pura de Carrera.
+            </p>
+            <p class="parrafoindex">
+                Promover un buen espectáculo, en base a un control clínico previo a las carreras, brindando la
+                atención
+                necesaria en accidentes, de manera de asegurar el bienestar y la seguridad tanto de jinetes como de
+                equinos.
+            </p>
+            <p class="parrafoindex">
+                Prevenir eventos sanitarios individuales o poblacionales que conspiren contra el correcto desarrollo
+                de
+                sus actividades, mediante el control de la condición física y del esquema sanitario del total de los
+                equinos que participan de las carreras hípicas.
+            </p>
+            <p class="parrafoindex">
+                Contribuir a una competencia objetiva, previniendo fraudes mediante un sistema eficaz de
+                identificación
+                y control de identidad de los equinos que compiten, y un sistema de control y detección de
+                sustancias
+                prohibidas.
+            </p>
         </section>
-
-
 
         <aside class="border">Vitalcan La nutricion Indicada
 
@@ -109,13 +123,16 @@
                     </div>
                 </div>
             </div>
-
         </footer>
 
     </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
 

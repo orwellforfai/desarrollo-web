@@ -8,11 +8,11 @@
    margin: 0;
    padding: 0;
 }
+
 html {
    box-sizing: border-box;
    font-family: 'Montserrat', sans-serif;
 }
-
 
 .border {
    border: 1px solid black;
@@ -38,18 +38,18 @@ a {
    font-style: normal;
    font-weight: bold;
    text-align: justify;
-   }
-
-.publicidad{
-align-self: center;
-
 }
+
+.publicidad {
+   align-self: center;
+}
+
 /* ----DECLARO AREAS ---- */
 header {
    grid-area: header;
-   background-image: linear-gradient(to bottom,black,grey);
+   background-image: linear-gradient(to bottom, black, grey);
    color: whitesmoke;
-} 
+}
 
 footer {
    grid-area: footer;
@@ -59,7 +59,7 @@ footer {
 section#productos {
    grid-area: productos;
    background-color: lightgrey;
-  }
+}
 
 section#servicios {
    grid-area: servicios;
@@ -89,16 +89,15 @@ aside {
       "servicios"
       "publicidad"
       "footer";
-     grid-template-columns: auto;
-     grid-row-gap: 5px;
+   grid-template-columns: auto;
+   grid-row-gap: 5px;
 }
 
 /* -------- ESTILOS FLEX -------- */
 .menuFlex {
    display: flex;
    flex-direction: row;
-    justify-content:space-around ;
-
+   justify-content: space-around;
 
 }
 
@@ -107,15 +106,17 @@ aside {
    flex-direction: column;
    text-align: center;
 }
-.footerFlex{
+
+.footerFlex {
    color: white;
    height: 100%;
    display: flex;
    justify-content: space-around;
    align-items: center;
 }
+
 .footer_texto {
-   font-size:10px;
+   font-size: 10px;
 }
 
 .footer_social {
@@ -126,79 +127,81 @@ aside {
 .footer_social i {
    font-size: 10px;
 }
+
 /* ------------------------ VISTA MOBILE - TABLET  ----------- */
 @media (min-width: 768px) {
-#grilla {
-   width: 100%;
-   height: 100vh;
-   display: grid;
-   grid-template-areas:
-      "header header"
-      "nav nav"
-      "productos productos"
-      "servicios servicios"
-      "publicidad publicidad"
-      "footer footer";
-   grid-template-columns: 50% 50%;
-   grid-column-gap: 5px; 
-   grid-row-gap: 5px;
-   
-}
+   #grilla {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      grid-template-areas:
+         "header header"
+         "nav nav"
+         "productos productos"
+         "servicios servicios"
+         "publicidad publicidad"
+         "footer footer";
+      grid-template-columns: 50% 50%;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
 
-/* -------- ESTILOS FLEX -------- */
-.menuFlex {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
- 
+   }
 
+   /* -------- ESTILOS FLEX -------- */
+   .menuFlex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
 
 
-}
 
-.productosFlex {
-   display: flex;
-   flex-direction: row;
-   text-align: center;
-}
-.footerFlex{
-   color: white;
-   height: 100%;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-.footer_texto {
-   font-size:10px;
-}
 
-.footer_social {
-   display: flex;
-   gap: 10px
-}
+   }
 
-.footer_social i {
-   font-size: 20px;
-}
+   .productosFlex {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+   }
+
+   .footerFlex {
+      color: white;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+
+   .footer_texto {
+      font-size: 10px;
+   }
+
+   .footer_social {
+      display: flex;
+      gap: 10px
+   }
+
+   .footer_social i {
+      font-size: 20px;
+   }
 }
 
 
 /* ------------------------ VISTA DESKTOP ------------------------ */
 @media (min-width:1024px) {
 
-
-
    #grilla {
       width: 100%;
       height: 100vh;
       display: grid;
       grid-template-areas:
-         "nav header header"
-         "nav productos publicidad"
-         "nav servicios publicidad"
-         "nav footer footer";
-      grid-template-rows: 100px 2fr 1fr 75px;
-      grid-template-columns: 10% auto 15%;
+         "header header"
+         "nav nav"
+         "productos publicidad"
+         "servicios publicidad"
+         "footer footer";
+      grid-template-rows: 100px 100px auto auto 75px;
+      grid-template-columns: 80% 20%;
       grid-column-gap: 10px;
       grid-row-gap: 10px;
    }
@@ -210,8 +213,6 @@ aside {
       justify-content: space-around;
       gap: 5%;
       height: 100%;
-
-
    }
 
    .productosFlex {
@@ -219,27 +220,32 @@ aside {
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
-
+      height: 100%;
    }
 
-   .footerFlex{
+   .serviciosFlex {
+      height: 100%;
+   }
+
+   .footerFlex {
       color: white;
       height: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
    }
+
    .footer_texto {
-      font-size:20px;
-  }
-  
-  .footer_social {
+      font-size: 20px;
+   }
+
+   .footer_social {
       display: flex;
       gap: 20px
-  }
-  
-  .footer_social i {
+   }
+
+   .footer_social i {
       font-size: 30px;
-  }
-  
+   }
+
 }
