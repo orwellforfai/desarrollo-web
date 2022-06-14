@@ -1,4 +1,6 @@
+@import "variables";
 @import "general";
+
 
 .parrafoindex {
    margin: 10px;
@@ -17,7 +19,7 @@
 /* ----DECLARO AREAS ---- */
 header {
    grid-area: header;
-   background-image: linear-gradient(to bottom, black, grey);
+   background-image: linear-gradient(to bottom, $colorTituloDesde, $colorTituloHasta);
    color: whitesmoke;
 }
 
