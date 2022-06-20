@@ -1,3 +1,4 @@
+/* Mapas : Se declaran con una coma */
 /* ------------------------ FUENTE ------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap");
@@ -8,9 +9,8 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .border {
@@ -20,7 +20,6 @@ html {
 nav ul li {
   list-style: none;
 }
-
 nav ul li a {
   text-decoration: none;
   cursor: pointer;
@@ -29,9 +28,31 @@ nav ul li a {
   font-size: 18px;
 }
 
-.parrafoindex {
+.btn--enviar {
+  background-color: green;
+}
+
+.btn--reset {
+  background-color: red;
+}
+
+.btn--cancelar {
+  background-color: purple;
+}
+
+/* mixin */
+/* extend de clase parrafoindex a parrafo--activiades */
+.parrafo--actividades {
+  font-weight: bolder;
+  color: rgb(209, 203, 203);
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.parrafoindex, .parrafo--actividades {
   margin: 10px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   list-style-type: circle;
   font-size: 20px;
   font-style: normal;
@@ -40,52 +61,37 @@ nav ul li a {
 }
 
 .publicidad {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 /* ----DECLARO AREAS ---- */
 header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: header;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(grey));
   background-image: linear-gradient(to bottom, black, grey);
   color: whitesmoke;
 }
 
 footer {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
   grid-area: footer;
   background-color: black;
 }
 
 section#productos {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: productos;
   background-color: lightgrey;
 }
 
 section#servicios {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
   grid-area: servicios;
-  background-color: #7c8888;
+  background-color: rgb(124, 136, 136);
 }
 
 nav {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: nav;
-  background-color: #9c9898;
+  background-color: rgb(156, 152, 152);
 }
 
 aside {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
   grid-area: publicidad;
   background-color: darkgray;
 }
@@ -94,49 +100,31 @@ aside {
 #grilla {
   width: 100%;
   height: 100vh;
-  display: -ms-grid;
   display: grid;
-      grid-template-areas: "header" "nav" "productos" "servicios" "publicidad" "footer";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  grid-template-areas: "header" "nav" "productos" "servicios" "publicidad" "footer";
+  grid-template-columns: auto;
   grid-row-gap: 5px;
 }
 
 /* -------- ESTILOS FLEX -------- */
 .menuFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .productosFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
 .footerFlex {
   color: white;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer_texto {
@@ -144,8 +132,6 @@ aside {
 }
 
 .footer_social {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
@@ -159,132 +145,99 @@ aside {
   #grilla {
     width: 100%;
     height: 100vh;
-    display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header" "nav nav" "productos productos" "servicios servicios" "publicidad publicidad" "footer footer";
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    grid-template-areas: "header header" "nav nav" "productos productos" "servicios servicios" "publicidad publicidad" "footer footer";
+    grid-template-columns: 50% 50%;
     grid-column-gap: 5px;
     grid-row-gap: 5px;
   }
+
   /* -------- ESTILOS FLEX -------- */
   .menuFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
   }
+
   .productosFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     text-align: center;
   }
+
   .footerFlex {
     color: white;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
+
   .footer_texto {
     font-size: 10px;
   }
+
   .footer_social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
+
   .footer_social i {
     font-size: 20px;
   }
 }
-
 /* ------------------------ VISTA DESKTOP ------------------------ */
 @media (min-width: 1024px) {
   #grilla {
     width: 100%;
     height: 100vh;
-    display: -ms-grid;
     display: grid;
-        grid-template-areas: "header header" "nav nav" "productos publicidad" "servicios publicidad" "footer footer";
-    -ms-grid-rows: 100px 100px auto auto 75px;
-        grid-template-rows: 100px 100px auto auto 75px;
-    -ms-grid-columns: 80% 20%;
-        grid-template-columns: 80% 20%;
+    grid-template-areas: "header header" "nav nav" "productos publicidad" "servicios publicidad" "footer footer";
+    grid-template-rows: 100px 100px auto auto 75px;
+    grid-template-columns: 80% 20%;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
+
   /* -------- ESTILOS FLEX -------- */
   .menuFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-around;
     gap: 5%;
     height: 100%;
   }
+
   .productosFlex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     height: 100%;
   }
+
   .serviciosFlex {
     height: 100%;
   }
+
   .footerFlex {
     color: white;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
+
   .footer_texto {
     font-size: 20px;
   }
+
   .footer_social {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 20px;
   }
+
   .footer_social i {
     font-size: 30px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

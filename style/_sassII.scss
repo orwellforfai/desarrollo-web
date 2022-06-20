@@ -1,0 +1,19 @@
+/* mixin */
+
+@mixin padding ($left, $right){
+padding-left: $left;
+padding-right: $right;
+
+}
+    
+/* extend de clase parrafoindex a parrafo--activiades */
+
+.parrafo--actividades{
+@extend .parrafoindex;
+font-weight: bolder;
+color: rgb(209, 203, 203) ;
+justify-content: center;
+@include padding (20px, 20px);
+} 
+
+

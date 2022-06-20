@@ -1,0 +1,7 @@
+@each $botonformulario, $color in $paleta {
+    .btn--#{$botonformulario}{
+        background-color: $color;
+    }
+}
+
+
