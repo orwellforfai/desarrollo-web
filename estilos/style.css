@@ -29,15 +29,15 @@ nav ul li a {
 }
 
 .btn--enviar {
-  background-color: green;
+  background-color: rgb(190, 188, 188);
 }
 
 .btn--reset {
-  background-color: red;
+  background-color: grey;
 }
 
 .btn--cancelar {
-  background-color: purple;
+  background-color: rgb(155, 152, 152);
 }
 
 /* mixin */
@@ -52,6 +52,7 @@ nav ul li a {
 
 .parrafoindex, .parrafo--actividades {
   margin: 10px;
+  padding: 10px;
   font-family: "Noto Sans", sans-serif;
   list-style-type: circle;
   font-size: 20px;
@@ -161,6 +162,7 @@ aside {
 
   .productosFlex {
     display: flex;
+    height: 80px;
     flex-direction: row;
     text-align: center;
   }

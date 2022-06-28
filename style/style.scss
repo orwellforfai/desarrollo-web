@@ -6,6 +6,7 @@
 
 .parrafoindex {
    margin: 10px;
+   padding: 10px;
    font-family: 'Noto Sans', sans-serif;
    list-style-type: circle;
    font-size: 20px;
@@ -134,6 +135,7 @@ aside {
 
    .productosFlex {
       display: flex;
+      height: 80px;
       flex-direction: row;
       text-align: center;
    }
