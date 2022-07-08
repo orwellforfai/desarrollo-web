@@ -17,6 +17,15 @@ html {
   border: 1px solid black;
 }
 
+.paddingform {
+  padding: 10px;
+}
+
+.paddingbordes {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 nav ul li {
   list-style: none;
 }
@@ -162,7 +171,6 @@ aside {
 
   .productosFlex {
     display: flex;
-    height: 80px;
     flex-direction: row;
     text-align: center;
   }
